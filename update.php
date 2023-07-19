@@ -1,17 +1,17 @@
 <?php
 include 'connect.php';
 $id=$_GET['id'];
-
+echo $id;
 if (isset($_POST['submit'])) {
     $name=$_POST['username'];
     $email=$_POST['email'];
     $phone=$_POST['phone'];
     $password=$_POST['password'];
-
-    $sql="update 'users' name='$name', phone='$phone', email='$email', password='$password') where id=$id";
-
+echo $name.$email.$phone.$password;
+    $sql="update users set name='$name', mobile='$phone', email='$email', password='$password' where id=$id";
+echo "<br> Waiting for execution";
     $result=mysqli_query($con,$sql);
-
+echo "should be updated";
     if($result){
         header("location: display_users.php");
         //echo "Data Entered Successfully";
@@ -45,8 +45,5 @@ if (isset($_POST['submit'])) {
     
     
     
-    <?php
-
-
-?></body>
+  </body>
 </html>
