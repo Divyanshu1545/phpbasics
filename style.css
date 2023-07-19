@@ -1,0 +1,28 @@
+#add-user{height: 80px;
+width: 130px;
+margin: 40px;
+font-size: 20px;
+background-color: rgb(126, 181, 253);
+border-radius: 15px;}
+body{display: flex;
+    justify-content: center;align-items: center;
+   
+}
+.container{padding: 25px;
+    border-radius: 15px;
+    max-height: 80vh;
+    display: flex;max-width: 80vh;
+    min-width: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+
+}
+label{
+font-size: large;
+}
+input{
+    
+    padding: 12px;
+    width: 40vh;
+}
